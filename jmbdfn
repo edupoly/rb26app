@@ -1,0 +1,28 @@
+frontend
+1. html
+2. css
+3. js
+4. es6
+5. typescript
+6. Angular / React
+    jsx
+    lifecycle stages
+
+    Routing
+    form handling
+        schema
+        regular exp
+    Async Services
+    HTTP calls
+        GET
+
+        POST
+        PUT
+        DELETE
+
+        token authentication
+        env variable
+
+        unit test cases
+
+7. CICD GIT
