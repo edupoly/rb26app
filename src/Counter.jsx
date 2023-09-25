@@ -6,6 +6,7 @@ function Counter(){
             <h1>Counter:{c}</h1>
             <button>Increment</button>
             <button>Decrement</button>
+            <button>Reset</button>
         </div>
     )
 }
