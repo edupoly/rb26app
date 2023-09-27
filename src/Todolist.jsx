@@ -16,11 +16,12 @@ function Todolist() {
             todos.map((todo)=>{
               return <li>
                 {todo}
+                <button>Done</button>
+                <button>Delete</button>
                 </li>
             })
           }
         </ul>
-       
     </div>
   )
 }
