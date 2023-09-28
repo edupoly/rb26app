@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from 'react'
 
 function Regform() {
     var firstnameRef=useRef()
-    useEffect(()=>{
-        firstnameRef.current.focus();
-    },[])
+    
   return (
     <div className='mybox'>
         <h1>Regform</h1>
