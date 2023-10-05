@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-function Countries() {
+
+function Countries3() {
     var [countries,setCountries]=React.useState([])
     React.useEffect(()=>{
         axios.get("https://restcountries.com/v3/all").then((res)=>{
@@ -10,11 +11,11 @@ function Countries() {
     },[])
     return (
         <div className='mybox'>
-            <h1>Countries</h1>
+            <h1>Countries3</h1>
             <ul>
                 {
                     countries?.map((country)=>{
-                        return <li><Link to={`/countryDetails/${country.name.common}`}>{country.name.common}</Link></li>
+                        return <li><Link to={`/countryDetails3`} state={country}>{country.name.common}</Link></li>
                     })
                 }
             </ul>
@@ -22,4 +23,4 @@ function Countries() {
     )
 }
 
-export default Countries
+export default Countries3

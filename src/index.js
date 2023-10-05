@@ -7,6 +7,10 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Counter from './Counter';
 import Todolist from './Todolist';
 import Countries from './Countries';
+import CountryDetails from './CountryDetails';
+import Countries2 from './Countries2';
+import Countries3 from './Countries3';
+import CountryDetails3 from './CountryDetails3';
 
 const router = createBrowserRouter([
     {
@@ -23,7 +27,30 @@ const router = createBrowserRouter([
             },
             {
                 path:'/countries',
-                element:<Countries></Countries>
+                element:<Countries></Countries>,
+                
+            },
+            {
+                path:'/countryDetails/:cname',
+                element:<CountryDetails></CountryDetails>
+            },
+            {
+                path:'/countries2',
+                element:<Countries2></Countries2>,
+                children:[
+                    {
+                        path:"/countries2/countryDetails/:cname",
+                        element:<CountryDetails></CountryDetails>
+                    }
+                ]
+            },
+            {
+                path:'/countries3',
+                element:<Countries3></Countries3>
+            },
+            {
+                path:'/countryDetails3',
+                element:<CountryDetails3></CountryDetails3>
             }
         ]
     },
